@@ -1,10 +1,11 @@
-# El Vergel Restaurant — Boceto editorial
+# Liberato Eatery — Concept Website
 
-Sitio estático listo para GitHub Pages o Vercel.
+Boceto web estático listo para GitHub Pages / Vercel.
 
+## Archivos
 - `index.html`
-- imágenes recortadas de las referencias proporcionadas
-- sin frameworks ni dependencias
-- responsive
+- `assets/`
+- `.nojekyll`
 
-Los datos de contacto utilizados provienen del material compartido por el usuario.
+## Nota
+Las imágenes se prepararon a partir del material compartido en la conversación. Los precios de eventos se tomaron del promocional de Liberato compartido por el usuario.

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17120f">
+<title>Antonoff Bread Co. — Repostería & Café</title>
+<meta name="description" content="Antonoff Bread Co. — repostería, café, postres y detalles hechos para compartir.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+:root{--ink:#191511;--cream:#f7f0e6;--paper:#fffaf3;--caramel:#ba632f;--brown:#563522;--muted:#7d7168;--line:rgba(25,21,17,.15);--shadow:0 18px 55px rgba(49,29,17,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;overflow-x:hidden}img{display:block;width:100%}a{text-decoration:none;color:inherit}.serif,h1,h2,h3{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400}.wrap{width:min(1180px,92vw);margin:auto}
+.nav{position:fixed;inset:0 0 auto;z-index:50;backdrop-filter:blur(16px);background:rgba(255,250,243,.86);border-bottom:1px solid rgba(20,15,12,.08)}.navin{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.04em}.brandmark{width:48px;height:48px;border-radius:50%;overflow:hidden;border:1px solid #201913;background:#fff}.brandmark img{height:100%;object-fit:cover;transform:scale(1.23)}.links{display:flex;gap:25px;font-size:14px}.links a{position:relative}.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--caramel);transition:.35s}.links a:hover:after{right:0}.navcta{padding:11px 17px;border-radius:999px;background:var(--ink);color:white;font-size:13px}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.03fr .97fr;padding-top:78px;background:#17120f;color:white}.hero-copy{display:flex;align-items:center;position:relative;overflow:hidden}.hero-copy:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 25%,rgba(186,99,47,.35),transparent 36%),linear-gradient(135deg,#211912,#120f0d 68%)}.hero-inner{position:relative;padding:72px max(6vw,48px)}.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:#d6aa87}.hero h1{font-size:clamp(54px,6.6vw,102px);line-height:.91;margin:18px 0 24px;max-width:760px}.hero p{color:#d7d0cb;max-width:580px;font-size:17px;line-height:1.7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:14px 22px;border:1px solid rgba(255,255,255,.35);font-size:14px;transition:.25s}.btn.primary{background:var(--caramel);border-color:var(--caramel)}.btn:hover{transform:translateY(-2px)}.scribble{font-family:'Libre Caslon Display',Georgia,serif;font-style:italic;font-size:21px;color:#d7ab83;margin-top:42px}.hero-image{position:relative;overflow:hidden}.hero-image img{height:100%;object-fit:cover;object-position:center;transform:scale(1.03);animation:slowzoom 16s ease-in-out infinite alternate}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(23,18,15,.25),transparent 28%)}@keyframes slowzoom{to{transform:scale(1.09)}}
+.marquee{overflow:hidden;border-bottom:1px solid var(--line);background:#f2e7d7}.track{display:flex;width:max-content;animation:marq 22s linear infinite}.track span{padding:18px 28px;font-size:12px;letter-spacing:.28em;text-transform:uppercase}.track span:after{content:"✦";margin-left:42px;color:var(--caramel)}@keyframes marq{to{transform:translateX(-50%)}}
+.intro{padding:105px 0 70px}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:end}.intro h2{font-size:clamp(44px,5vw,74px);line-height:.96;margin:0}.intro p{font-size:18px;line-height:1.8;color:#665b53;max-width:700px}
+.categories{padding:20px 0 105px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--paper);border:1px solid rgba(48,31,20,.09);border-radius:18px;overflow:hidden;box-shadow:0 8px 28px rgba(52,35,22,.06);transform:translateY(0);transition:.45s}.card:hover{transform:translateY(-8px);box-shadow:var(--shadow)}.card-media{aspect-ratio:4/5;overflow:hidden;background:#ddd}.card-media img{height:100%;object-fit:cover;transition:.7s}.card:hover img{transform:scale(1.05)}.card-body{padding:22px 22px 26px}.kicker{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--caramel);font-weight:700}.card h3{font-size:30px;line-height:1.02;margin:8px 0 9px}.card p{color:#73675f;font-size:14px;line-height:1.6;margin:0}.smalllink{display:inline-block;margin-top:16px;color:#8a3f1e;font-size:13px;font-weight:600}
+.feature{display:grid;grid-template-columns:1fr 1fr;min-height:680px;background:#201711;color:#f9efe3}.feature-photo{position:relative;overflow:hidden}.feature-photo img{height:100%;object-fit:cover}.feature-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,#201711)}.feature-copy{display:flex;align-items:center;padding:9vw}.feature h2{font-size:clamp(48px,5.5vw,78px);line-height:.95;margin:16px 0}.feature p{color:#cfc4ba;line-height:1.8;max-width:520px}.feature .btn{margin-top:20px}
+.story{padding:115px 0;background:#fbf6ee}.story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.story-big,.story-stack>div{position:relative;overflow:hidden;border-radius:18px}.story-big{min-height:690px}.story-stack{display:grid;gap:16px}.story-stack>div{min-height:337px}.story img{height:100%;object-fit:cover;transition:.7s}.story-big:hover img,.story-stack>div:hover img{transform:scale(1.045)}.overlay{position:absolute;inset:auto 0 0;padding:36px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.76))}.overlay h3{font-size:40px;margin:8px 0}.overlay p{max-width:520px;color:#e6dfd8}
+.gallery{padding:110px 0 40px}.gallery-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:28px}.gallery h2{font-size:58px;margin:0}.masonry{columns:4 220px;column-gap:12px}.tile{break-inside:avoid;margin-bottom:12px;border-radius:15px;overflow:hidden;position:relative;background:#ddd}.tile img{width:100%;height:auto;transition:.55s}.tile:hover img{transform:scale(1.035)}.tile:after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.2);border-radius:inherit;pointer-events:none}
+.visit{margin-top:105px;background:#17120f;color:white}.visit-grid{display:grid;grid-template-columns:1fr 1fr}.visit-copy{padding:10vw 8vw;display:flex;flex-direction:column;justify-content:center}.visit h2{font-size:clamp(54px,6vw,88px);line-height:.95;margin:15px 0}.visit p{color:#cfc8c1;line-height:1.8}.visit-image{min-height:650px;overflow:hidden}.visit-image img{height:100%;object-fit:cover}.contactline{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;color:#e5b893}.footer{padding:28px 0;background:#0e0b09;color:#aaa}.footin{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px}.socials{display:flex;gap:14px}.socials a{border:1px solid #37302b;padding:9px 12px;border-radius:999px;color:#ddd}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}.floaty{animation:float 5s ease-in-out infinite}@keyframes float{50%{transform:translateY(-8px) rotate(.3deg)}}
+@media(max-width:900px){.links{display:none}.navin{height:68px}.hero{grid-template-columns:1fr;padding-top:68px}.hero-copy{min-height:62vh}.hero-image{min-height:50vh}.hero-inner{padding:58px 6vw}.intro-grid{grid-template-columns:1fr;gap:22px}.cards{grid-template-columns:1fr 1fr}.feature,.visit-grid{grid-template-columns:1fr}.feature-photo,.visit-image{min-height:520px}.feature-copy{padding:70px 7vw}.story-grid{grid-template-columns:1fr}.story-big{min-height:520px}.story-stack{grid-template-columns:1fr 1fr}.story-stack>div{min-height:360px}.masonry{columns:2}.visit-copy{padding:70px 7vw}.footin{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.brand span{display:none}.navcta{padding:9px 13px}.hero h1{font-size:53px}.hero-copy{min-height:70vh}.hero-image{min-height:42vh}.intro{padding-top:75px}.cards{grid-template-columns:1fr}.card-media{aspect-ratio:1.05/1}.story-stack{grid-template-columns:1fr}.masonry{columns:1}.gallery h2{font-size:44px}.visit-image{min-height:420px}.feature-photo{min-height:430px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#inicio"><span class="brandmark"><img src="assets/1000188840.jpg" alt="Antonoff Bread Co."></span><span>ANTONOFF BREAD CO.</span></a>
+  <nav class="links"><a href="#inicio">Inicio</a><a href="#sabores">Panadería</a><a href="#postres">Postres</a><a href="#temporada">Temporada</a><a href="#galeria">Galería</a><a href="#visitanos">Contacto</a></nav>
+  <a class="navcta" href="https://wa.me/525555725888" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+</div></header>
+<main id="inicio">
+<section class="hero">
+  <div class="hero-copy"><div class="hero-inner reveal">
+    <div class="eyebrow">Pan · Postres · Café · Momentos</div>
+    <h1>Panadería artesanal con sabor de temporada.</h1>
+    <p>Una repostería que mezcla tradición, antojo y detalles hechos para compartir. De un café rápido a un postre que se vuelve regalo.</p>
+    <div class="actions"><a class="btn primary" href="#sabores">Ver sabores →</a><a class="btn" href="#galeria">Explorar galería</a></div>
+    <div class="scribble">Más que pan, son buenos momentos.</div>
+  </div></div>
+  <div class="hero-image"><img src="assets/1000188842.jpg" alt="Fachada de Antonoff Bread Co."></div>
+</section>
+<div class="marquee"><div class="track"><span>Panadería artesanal</span><span>Postres de temporada</span><span>Café</span><span>Regalos</span><span>Antojos para compartir</span><span>Panadería artesanal</span><span>Postres de temporada</span><span>Café</span><span>Regalos</span><span>Antojos para compartir</span></div></div>
+<section class="intro"><div class="wrap intro-grid reveal"><div><div class="eyebrow" style="color:#9b582f">Hecho con detalle</div><h2>Lo cotidiano también puede sentirse especial.</h2></div><p>Antonoff tiene esa mezcla de cafetería de barrio y repostería de antojo: postres cremosos, galletas, tartas, panes, mezclas dulces y detalles de temporada. Esta página está construida para que la fotografía lleve el ritmo y el producto sea siempre el protagonista.</p></div></section>
+<section class="categories" id="sabores"><div class="wrap"><div class="cards">
+  <article class="card reveal"><div class="card-media"><img src="assets/1000188789.jpg" alt="Frasco de galletas Antonoff"></div><div class="card-body"><div class="kicker">Regalos</div><h3>Detalles que endulzan</h3><p>Frascos y presentaciones para regalar algo hecho con cariño.</p><a class="smalllink" href="#galeria">Ver más →</a></div></article>
+  <article class="card reveal"><div class="card-media"><img src="assets/1000188785.jpg" alt="Brownies de fresa"></div><div class="card-body"><div class="kicker">Postres</div><h3>Sabores que sorprenden</h3><p>Capas, fruta, chocolate y texturas suaves que piden otra mordida.</p><a class="smalllink" href="#postres">Ver postres →</a></div></article>
+  <article class="card reveal"><div class="card-media"><img src="assets/1000188783.jpg" alt="Galletas de mermelada"></div><div class="card-body"><div class="kicker">Galletas</div><h3>Clásicos que enamoran</h3><p>Galletas delicadas, rellenos dulces y acabados que se ven tan bien como saben.</p><a class="smalllink" href="#galeria">Ver galletas →</a></div></article>
+  <article class="card reveal"><div class="card-media"><img src="assets/1000188781.jpg" alt="Cheesecake"></div><div class="card-body"><div class="kicker">Cheesecakes</div><h3>Un bocado inolvidable</h3><p>Cremosos, balanceados y con ese toque que hace que vuelvas.</p><a class="smalllink" href="#galeria">Ver colección →</a></div></article>
+</div></div></section>
+<section class="feature" id="temporada"><div class="feature-photo"><img src="assets/1000188787.jpg" alt="Detalle de temporada"></div><div class="feature-copy reveal"><div><div class="eyebrow">Sabores de temporada</div><h2>La magia también se saborea.</h2><p>Hay productos que solo aparecen en ciertos momentos del año. Esta sección cambia el ritmo de la página con una atmósfera más cálida, pensada para lanzamientos, fechas especiales y detalles que se sienten de temporada.</p><a class="btn primary" href="#galeria">Descubrir temporada →</a></div></div></section>
+<section class="story" id="postres"><div class="wrap story-grid">
+  <div class="story-big reveal"><img src="assets/1000188834.jpg" alt="Pastel Antonoff"><div class="overlay"><div class="kicker" style="color:#f7c69e">Pastelería</div><h3>Hecho para partir y compartir.</h3><p>Pasteles y tartas con acabados clásicos, fotografiados desde el proceso hasta el último corte.</p></div></div>
+  <div class="story-stack">
+    <div class="reveal"><img src="assets/1000188832.jpg" alt="Preparación artesanal"><div class="overlay"><div class="kicker" style="color:#f7c69e">Proceso</div><h3>Desde la mesa de trabajo.</h3></div></div>
+    <div class="reveal"><img src="assets/1000188830.jpg" alt="Producción Antonoff"><div class="overlay"><div class="kicker" style="color:#f7c69e">Cocina</div><h3>Pequeños lotes, grandes antojos.</h3></div></div>
+  </div>
+</div></section>
+<section class="gallery" id="galeria"><div class="wrap"><div class="gallery-head reveal"><div><div class="eyebrow" style="color:#9b582f">Un mundo de sabores</div><h2>Nuestra galería</h2></div><div style="color:#786b61">Fotos reales de producto y proceso.</div></div>
+<div class="masonry">
+  <figure class="tile reveal"><img src="assets/1000188771.jpg" alt="Dulces de chocolate"></figure>
+  <figure class="tile reveal"><img src="assets/1000188779.jpg" alt="Snack dulce"></figure>
+  <figure class="tile reveal"><img src="assets/1000188791.jpg" alt="Pan de temporada"></figure>
+  <figure class="tile reveal"><img src="assets/1000188793.jpg" alt="Pan artesanal"></figure>
+  <figure class="tile reveal"><img src="assets/1000188795.jpg" alt="Tarta"></figure>
+  <figure class="tile reveal"><img src="assets/1000188797.jpg" alt="Pan dulce"></figure>
+  <figure class="tile reveal"><img src="assets/1000188799.jpg" alt="Proceso"></figure>
+  <figure class="tile reveal"><img src="assets/1000188801.jpg" alt="Café y postre"></figure>
+  <figure class="tile reveal"><img src="assets/1000188806.jpg" alt="Tarta artesanal"></figure>
+  <figure class="tile reveal"><img src="assets/1000188816.jpg" alt="Mezclas dulces"></figure>
+  <figure class="tile reveal"><img src="assets/1000188820.jpg" alt="Snack rojo"></figure>
+  <figure class="tile reveal"><img src="assets/1000188822.jpg" alt="Snack gourmet"></figure>
+  <figure class="tile reveal"><img src="assets/1000188824.jpg" alt="Cheesecake individual"></figure>
+  <figure class="tile reveal"><img src="assets/1000188826.jpg" alt="Café Antonoff"></figure>
+  <figure class="tile reveal"><img src="assets/1000188828.jpg" alt="Rebanada de pan dulce"></figure>
+  <figure class="tile reveal"><img src="assets/1000188836.jpg" alt="Preparación de pastel"></figure>
+  <figure class="tile reveal"><img src="assets/1000188838.jpg" alt="Logo Antonoff"></figure>
+  <figure class="tile reveal"><img src="assets/1000188840.jpg" alt="Letrero Antonoff Bread Co"></figure>
+</div></div></section>
+<section class="visit" id="visitanos"><div class="visit-grid"><div class="visit-copy reveal"><div class="eyebrow">Repostería & Café</div><h2>Café, pan y buenas historias.</h2><p>Un espacio para pasar por algo dulce, acompañarlo con café o elegir un detalle para llevar. Para pedidos y disponibilidad, escríbenos directamente.</p><div class="actions"><a class="btn primary" href="https://wa.me/525555725888" target="_blank" rel="noopener">WhatsApp 55 5572 5888 →</a></div><div class="contactline"><span>Est. 2005</span><span>Antonoff Bread Co.</span></div></div><div class="visit-image"><img src="assets/1000188840.jpg" alt="Antonoff Bread Co."></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footin"><div>© Antonoff Bread Co. · Repostería & Café</div><div class="socials"><a href="#inicio">Inicio</a><a href="https://wa.me/525555725888" target="_blank" rel="noopener">WhatsApp</a></div></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const hero=document.querySelector('.hero-image img');window.addEventListener('scroll',()=>{if(innerWidth>900){hero.style.transform=`scale(1.04) translateY(${Math.min(scrollY*.035,22)}px)`}});
+</script>
+</body></html>
